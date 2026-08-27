@@ -134,3 +134,4 @@ function createCategoryButtons(data) {
         });
     });
 }
+
