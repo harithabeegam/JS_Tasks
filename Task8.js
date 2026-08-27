@@ -12,7 +12,6 @@ fetch("https://fakestoreapi.com/products")
   // Task 1
     displayProducts(jsData);
 });
-
 // Task 1 
 function displayProducts(products) {
     let apiCard = document.querySelector(".apicard");
@@ -31,7 +30,6 @@ function displayProducts(products) {
         apiCard.append(card);
     });
 }
-
 // Task 2 
 let firstFiveButton = document.createElement("button");
 firstFiveButton.innerText = "First 5 Products";
@@ -43,7 +41,6 @@ firstFiveButton.addEventListener("click", function() {
     let firstFive = jsData.slice(0, 5);
     displayProducts(firstFive);
 });
-
 // Task 3 
 let priceFilterButton = document.createElement("button");
 priceFilterButton.innerText = "Price > 50";
@@ -57,7 +54,6 @@ priceFilterButton.addEventListener("click", function() {
     });
     displayProducts(filteredProducts);
 });
-
 // Task 4 
 let menButton = document.createElement("button");
 menButton.innerText = "Men's Clothing";
@@ -71,7 +67,6 @@ menButton.addEventListener("click", function() {
     });
     displayProducts(filteredProducts);
 });
-
 // Task 5
 function displayProductCount(count) {
     let totalProducts = document.querySelector("#totalProducts");
@@ -87,7 +82,6 @@ searchBtn.addEventListener("click", function() {
     });
     displayProducts(filteredProducts);
 });
-
 // Task 7 
 let lowToHigh = document.querySelector("#lowToHigh");
 let highToLow = document.querySelector("#highToLow");
@@ -98,7 +92,6 @@ lowToHigh.addEventListener("click", function() {
     });
     displayProducts(sortedProducts);
 });
-
 // Task 7 
 highToLow.addEventListener("click", function() {
     let sortedProducts = [...jsData];
@@ -107,7 +100,6 @@ highToLow.addEventListener("click", function() {
     });
   displayProducts(sortedProducts);
 });
-
 // Task 8 
 function createCategoryButtons(data) {
     let categoryButtons = document.querySelector("#categoryButtons");
